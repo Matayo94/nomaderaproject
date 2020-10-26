@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8II-aU-iOd">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Latin Tab-->
+        <scene sceneID="wg8-Bl-q9u">
+            <objects>
+                <viewController id="36f-7Q-fyl" customClass="LatinTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Byu-WZ-hpe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wDu-eq-CQH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGK-W5-Mn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1680" y="514"/>
+        </scene>
+        <!--America Tab-->
+        <scene sceneID="fDx-ic-bIT">
+            <objects>
+                <viewController id="8cj-C1-9DJ" customClass="AmericaTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YcL-Uh-HxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="p61-IQ-EOA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYU-L8-w7p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1759" y="-197"/>
+        </scene>
+        <!--MainTable-->
+        <scene sceneID="x8N-zi-0lh">
+            <objects>
+                <tableViewController title="MainTable" id="8II-aU-iOd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="840-dj-rUl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lUx-AE-nb8">
+                            <rect key="frame" x="0.0" y="644" width="414" height="256"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Nomad era monthly digest"/>
+                            <connections>
+                                <segue destination="UMf-xa-iOg" kind="presentation" modalTransitionStyle="coverVertical" id="zgT-bh-kSg"/>
+                            </connections>
+                        </button>
+                        <sections>
+                            <tableViewSection id="jGh-BZ-7Bg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="africaButton" rowHeight="98" id="BXR-yA-RJC">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BXR-yA-RJC" id="chh-Ke-X0T">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AfricaApp" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-yv-IY8">
+                                                    <rect key="frame" x="20" y="11" width="374" height="102"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-xD-lYr">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <state key="normal" title="AFRICA">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="e8R-x2-g20" kind="popoverPresentation" popoverAnchorView="p3V-xD-lYr" id="EgZ-bk-e7v">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="p3V-xD-lYr" firstAttribute="top" secondItem="chh-Ke-X0T" secondAttribute="top" constant="11" id="40U-KY-EKE"/>
+                                                <constraint firstItem="p3V-xD-lYr" firstAttribute="leading" secondItem="chh-Ke-X0T" secondAttribute="leading" constant="20" symbolic="YES" id="Gtd-pV-UA7"/>
+                                                <constraint firstItem="p3V-xD-lYr" firstAttribute="leading" secondItem="chh-Ke-X0T" secondAttribute="leading" constant="20" symbolic="YES" id="K7R-Ig-0dd"/>
+                                                <constraint firstAttribute="bottom" secondItem="p3V-xD-lYr" secondAttribute="bottom" id="fl4-Kg-TbJ"/>
+                                                <constraint firstItem="p3V-xD-lYr" firstAttribute="top" secondItem="chh-Ke-X0T" secondAttribute="top" constant="11" id="mYm-Qx-eAP"/>
+                                                <constraint firstAttribute="trailing" secondItem="p3V-xD-lYr" secondAttribute="trailing" constant="20" symbolic="YES" id="shx-G3-VON"/>
+                                                <constraint firstAttribute="trailing" secondItem="p3V-xD-lYr" secondAttribute="trailing" constant="20" symbolic="YES" id="tEj-m2-jnd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="asiaButton" rowHeight="98" id="0at-9J-9WD">
+                                        <rect key="frame" x="0.0" y="126" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0at-9J-9WD" id="sCh-uY-vMG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AsiaApp" translatesAutoresizingMaskIntoConstraints="NO" id="Rfy-Ag-sUM">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M68-O0-eBg">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <state key="normal" title="ASIA">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="R7H-Di-FFE" kind="popoverPresentation" popoverAnchorView="M68-O0-eBg" id="mZY-bv-kbY">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M68-O0-eBg" firstAttribute="leading" secondItem="sCh-uY-vMG" secondAttribute="leading" constant="20" symbolic="YES" id="FOx-gu-3Id"/>
+                                                <constraint firstItem="M68-O0-eBg" firstAttribute="leading" secondItem="sCh-uY-vMG" secondAttribute="leading" constant="20" symbolic="YES" id="OtU-RD-h21"/>
+                                                <constraint firstItem="M68-O0-eBg" firstAttribute="top" secondItem="sCh-uY-vMG" secondAttribute="top" constant="11" id="Pb6-ZB-EL8"/>
+                                                <constraint firstAttribute="bottom" secondItem="M68-O0-eBg" secondAttribute="bottom" id="Zb7-Fb-PFv"/>
+                                                <constraint firstItem="M68-O0-eBg" firstAttribute="top" secondItem="sCh-uY-vMG" secondAttribute="top" constant="11" id="d68-KL-TSM"/>
+                                                <constraint firstAttribute="trailing" secondItem="M68-O0-eBg" secondAttribute="trailing" constant="20" symbolic="YES" id="dc8-7R-3gd"/>
+                                                <constraint firstAttribute="trailing" secondItem="M68-O0-eBg" secondAttribute="trailing" constant="20" symbolic="YES" id="n1Y-Xq-6Je"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Caribbean Cell" rowHeight="98" id="eLt-82-edk">
+                                        <rect key="frame" x="0.0" y="224" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eLt-82-edk" id="5hF-ll-zzM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CaribbeanApp" translatesAutoresizingMaskIntoConstraints="NO" id="GLC-M8-hp3">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqk-0S-92Y">
+                                                    <rect key="frame" x="20" y="11" width="358" height="87"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="87" id="BRn-YN-A8o"/>
+                                                        <constraint firstAttribute="width" constant="358" id="YqD-4A-fDy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <state key="normal" title="CARIBBEAN">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="gTP-TD-3sh" kind="popoverPresentation" popoverAnchorView="rqk-0S-92Y" id="w0d-yD-Oob">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rqk-0S-92Y" firstAttribute="leading" secondItem="5hF-ll-zzM" secondAttribute="leading" constant="20" symbolic="YES" id="HdB-XX-0Px"/>
+                                                <constraint firstAttribute="bottom" secondItem="rqk-0S-92Y" secondAttribute="bottom" id="Kn3-df-WSi"/>
+                                                <constraint firstAttribute="trailing" secondItem="rqk-0S-92Y" secondAttribute="trailing" constant="20" symbolic="YES" id="LS3-TQ-DKr"/>
+                                                <constraint firstItem="rqk-0S-92Y" firstAttribute="top" secondItem="5hF-ll-zzM" secondAttribute="top" constant="11" id="rQA-4L-FpJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="europeButton" rowHeight="98" id="Z14-V6-cym">
+                                        <rect key="frame" x="0.0" y="322" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z14-V6-cym" id="Xt3-rl-CrO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EuropeApp" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-F9-xhc">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MX-WQ-U9n">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <state key="normal" title="EUROPE">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="96e-et-S97" kind="popoverPresentation" popoverAnchorView="0MX-WQ-U9n" id="D2P-VX-lTi">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0MX-WQ-U9n" secondAttribute="trailing" constant="20" symbolic="YES" id="IMd-pn-uw4"/>
+                                                <constraint firstAttribute="bottom" secondItem="0MX-WQ-U9n" secondAttribute="bottom" id="M8Y-mz-URH"/>
+                                                <constraint firstItem="0MX-WQ-U9n" firstAttribute="top" secondItem="Xt3-rl-CrO" secondAttribute="top" constant="11" id="eTN-Cs-sAy"/>
+                                                <constraint firstItem="0MX-WQ-U9n" firstAttribute="leading" secondItem="Xt3-rl-CrO" secondAttribute="leading" constant="20" symbolic="YES" id="u6l-d8-0jP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="latinButton" rowHeight="98" id="4iN-8I-L6B">
+                                        <rect key="frame" x="0.0" y="420" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4iN-8I-L6B" id="uPM-LY-1I4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LatinApp" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-JJ-PZu">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-Wt-2QR">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <state key="normal" title="LATIN AMERICA">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="36f-7Q-fyl" kind="popoverPresentation" popoverAnchorView="1fQ-Wt-2QR" id="P2w-BJ-gZu">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1fQ-Wt-2QR" firstAttribute="leading" secondItem="uPM-LY-1I4" secondAttribute="leading" constant="20" symbolic="YES" id="Qx2-rX-ZPs"/>
+                                                <constraint firstAttribute="trailing" secondItem="1fQ-Wt-2QR" secondAttribute="trailing" constant="20" symbolic="YES" id="eUp-gR-wAb"/>
+                                                <constraint firstAttribute="bottom" secondItem="1fQ-Wt-2QR" secondAttribute="bottom" id="rUt-Tu-hKW"/>
+                                                <constraint firstItem="1fQ-Wt-2QR" firstAttribute="top" secondItem="uPM-LY-1I4" secondAttribute="top" constant="11" id="uBv-HI-ldU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="americaButton" rowHeight="98" id="p38-eY-Ym0">
+                                        <rect key="frame" x="0.0" y="518" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p38-eY-Ym0" id="q5J-2Y-NQu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AmericaApp" translatesAutoresizingMaskIntoConstraints="NO" id="bZp-Z1-ktW">
+                                                    <rect key="frame" x="20" y="11" width="374" height="87"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9T-oD-G2O">
+                                                    <rect key="frame" x="20" y="20" width="374" height="78"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <state key="normal" title="US &amp; CANADA">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="8cj-C1-9DJ" kind="popoverPresentation" popoverAnchorView="S9T-oD-G2O" id="09D-8x-9vd">
+                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                        </segue>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="S9T-oD-G2O" secondAttribute="trailing" constant="20" symbolic="YES" id="BO7-AD-cT3"/>
+                                                <constraint firstItem="S9T-oD-G2O" firstAttribute="top" secondItem="q5J-2Y-NQu" secondAttribute="top" constant="20" symbolic="YES" id="LUQ-4L-NTf"/>
+                                                <constraint firstItem="S9T-oD-G2O" firstAttribute="leading" secondItem="q5J-2Y-NQu" secondAttribute="leading" constant="20" symbolic="YES" id="O6n-oz-PdG"/>
+                                                <constraint firstAttribute="bottom" secondItem="S9T-oD-G2O" secondAttribute="bottom" id="vIf-N5-4Se"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="8II-aU-iOd" id="pCf-Lt-S58"/>
+                            <outlet property="delegate" destination="8II-aU-iOd" id="AGD-aH-Jse"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scW-Te-seb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="73P-7Y-Acd"/>
+            </objects>
+            <point key="canvasLocation" x="-947.82608695652186" y="-95.089285714285708"/>
+        </scene>
+        <!--AsiaTab-->
+        <scene sceneID="pDl-h6-0Mk">
+            <objects>
+                <viewController title="AsiaTab" id="R7H-Di-FFE" customClass="AsiaTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TAd-TA-ayE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AsiaApp" translatesAutoresizingMaskIntoConstraints="NO" id="B2D-EA-H2z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R7Q-Za-npV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="B2D-EA-H2z" secondAttribute="bottom" constant="-54" id="1vR-Qv-i55"/>
+                            <constraint firstItem="B2D-EA-H2z" firstAttribute="leading" secondItem="R7Q-Za-npV" secondAttribute="leading" id="A1r-oB-xu1"/>
+                            <constraint firstItem="B2D-EA-H2z" firstAttribute="trailing" secondItem="R7Q-Za-npV" secondAttribute="trailing" id="cR7-3i-hMF"/>
+                            <constraint firstItem="B2D-EA-H2z" firstAttribute="top" secondItem="TAd-TA-ayE" secondAttribute="top" id="yvf-am-Si5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VC0-eQ-YAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="-433"/>
+        </scene>
+        <!--Caribbean Tab-->
+        <scene sceneID="PVs-7s-WYA">
+            <objects>
+                <viewController id="gTP-TD-3sh" customClass="CaribbeanTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2vI-h3-zbN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7w7-kC-aR7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEx-CB-wVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="272"/>
+        </scene>
+        <!--Europe Tab-->
+        <scene sceneID="yos-4Z-7XP">
+            <objects>
+                <viewController id="96e-et-S97" customClass="EuropeTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Bd-Zj-MH0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4zJ-U0-wqW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSA-eZ-MVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="279"/>
+        </scene>
+        <!--Newsletter-->
+        <scene sceneID="cFe-BG-FA5">
+            <objects>
+                <viewController storyboardIdentifier="New" title="Newsletter" id="UMf-xa-iOg" customClass="NewsletterTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTB-Yp-bdy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h5w-p3-qzw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzz-mm-5WZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-896" y="-925"/>
+        </scene>
+        <!--AfricaTab-->
+        <scene sceneID="GAQ-4N-Wjp">
+            <objects>
+                <viewController storyboardIdentifier="AfricaPage" title="AfricaTab" id="e8R-x2-g20" customClass="AfricaTab" customModule="nomaderaproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSZ-du-nit">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AfricaApp" translatesAutoresizingMaskIntoConstraints="NO" id="92u-rc-uPM">
+                                <rect key="frame" x="-1826" y="-364" width="2240" height="1260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n3X-aE-DGe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8d-VB-Eqv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="-391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AfricaApp" width="2240" height="1260"/>
+        <image name="AmericaApp" width="2240" height="1260"/>
+        <image name="AsiaApp" width="2240" height="1260"/>
+        <image name="CaribbeanApp" width="2240" height="1260"/>
+        <image name="EuropeApp" width="2240" height="1260"/>
+        <image name="LatinApp" width="2240" height="1260"/>
+        <image name="Nomad era monthly digest" width="2240" height="1260"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
